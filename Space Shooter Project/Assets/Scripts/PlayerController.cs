@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		GetComponent<Rigidbody>().velocity = movement * speed;
-		GetComponent<Rigidbody> ().position = new Vector3 
+		GetComponent<Rigidbody>().position = new Vector3 
 		(
 			Mathf.Clamp(position.x, boundary.xMin, boundary.xMax), 0.0f, 
 			Mathf.Clamp(position.z, boundary.zMin, boundary.zMax)
